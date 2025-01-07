@@ -1,0 +1,10 @@
+print("Welcome to the Classified Tip Calculator!")
+bill = float(input("How much was the bill?\n$"))
+people = int(input("How many people to split the bill?\n"))
+tip = int(input("What percentage tip would you like to give?\n(Do not add % sign)\n"))
+tipamt = bill * (tip/100)
+print(f"The tip amount is: ${round(tipamt, 2)}")
+pertip = (tip/100 + 1)
+total = bill*pertip
+print(f"Total bill amount is: ${round(total, 2)}")
+print(f"Each person should pay: ${round(total/people, 2)}")
